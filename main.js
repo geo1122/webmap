@@ -3,10 +3,10 @@
     const map = L.map('map').setView([27.7172, 85.3240], 13); // Example coordinates
 
     // Add OpenStreetMap base layer
-    const osmLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; OpenStreetMap contributors'
-    });
+    const osmLayer = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{
+        maxZoom: 20,
+        subdomains:['mt0','mt1','mt2','mt3']
+});
 
     osmLayer.addTo(map);
 
